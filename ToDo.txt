@@ -14,3 +14,7 @@ Flesh out code and further tests
 Roll out to smaller subreddits/try on inactive threads
 
 Try on active threads?
+
+Need to find a away to pass the keys and such with privacy
+	-> Maybe need to add a private file on GitHub? Ask for user submitted stuff?
+	-> Don't Host that on GitHub, check with the YT vids
