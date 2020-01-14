@@ -16,5 +16,5 @@ pw = input("Please input password")
 reddit = praw.Reddit(client_id='snho9d7xZNlVjA',
                      client_secret='Mv_fK5H2hkAiTNvVAj7YQjr4BM8',
                      username='PlaylistsBot',
-                     password='nCLXgM2N.RZkKhg',
+                     password= pw,
                      user_agent='Spotify playlist bot by /u/SamAndre')
