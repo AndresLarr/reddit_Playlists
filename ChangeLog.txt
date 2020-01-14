@@ -1,0 +1,11 @@
+Change Log for Reddit Playlist Bot
+-------------------------------------
+09 Jan 2020:
+	-Set up github repo
+	-initialized rpl.py script
+	-began researching APIs and wrappers
+
+12 Jan 2020:
+	-More reasearch on APIs and wrappers
+	-Set up ToDo.txt and ChangeLog.txt
+	-Pseudocode for the script

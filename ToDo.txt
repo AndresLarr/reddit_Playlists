@@ -1,0 +1,16 @@
+To Do for Reddit Playlist Bot
+Date Edited: 13 Jan 2020
+-----------------------------
+Aquire keys for Both API's (Done 12 Jan 2020)
+
+Make Skeleton/Pseudocode for what I want to do
+
+implement rudamentary code
+
+Create private Subreddit to test on 
+
+Flesh out code and further tests
+
+Roll out to smaller subreddits/try on inactive threads
+
+Try on active threads?
