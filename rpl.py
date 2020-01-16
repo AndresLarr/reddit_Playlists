@@ -18,3 +18,29 @@ reddit = praw.Reddit(client_id='snho9d7xZNlVjA',
                      username='PlaylistsBot',
                      password= pw,
                      user_agent='Spotify playlist bot by /u/SamAndre')
+
+#listing the subreddit the script will run on
+subreddit = reddit.subreddit("AskReddit")
+
+#Keyword for executing the script
+keyphrase = "!song"
+
+#Initialize Spotipy
+
+
+#Starting to analyze the comments
+for comment in subreddit.stream.comments():
+		if keyphrase in comment.body:
+				try:
+					#Now begin to check parent for song and look it up
+					txt = comment.parent()
+					#from the parent comment check to see if its a song
+					'''
+					process the text to see if it can be a song. 
+					Problems:
+					- If the comment contains more than just the song and artist
+					I will need to try and find the song.
+					-What if the song I add isn't correct
+					(will need to add a second command and edit the playlist)
+					-if there are multiple songs that are similar titles/remakes
+					how can i differentiate
