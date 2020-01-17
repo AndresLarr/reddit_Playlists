@@ -43,4 +43,6 @@ for comment in subreddit.stream.comments():
 					-What if the song I add isn't correct
 					(will need to add a second command and edit the playlist)
 					-if there are multiple songs that are similar titles/remakes
-					how can i differentiate
+					how can i differentiate'''
+				except:
+					reddit.comment("Sorry, your song was not found on spotify")
