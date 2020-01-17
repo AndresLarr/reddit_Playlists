@@ -18,3 +18,4 @@ reddit = praw.Reddit(client_id='snho9d7xZNlVjA',
                      username='PlaylistsBot',
                      password= pw,
                      user_agent='Spotify playlist bot by /u/SamAndre')
+
