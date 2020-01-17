@@ -18,3 +18,10 @@ Try on active threads?
 Need to find a away to pass the keys and such with privacy
 	-> Maybe need to add a private file on GitHub? Ask for user submitted stuff?
 	-> Don't Host that on GitHub, check with the YT vids
+
+
+Technical things to read up on:
+1. How can I differentate between the return of parent()? Is the parent a comment or a submittion?
+2. What data do I really need to look at?
+  a. Can I parse the comment and ignore some parts of it?
+3. How can I find the song name and title in a whole comment?

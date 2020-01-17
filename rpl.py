@@ -31,6 +31,11 @@ keyphrase = "!song"
 #Starting to analyze the comments
 for comment in subreddit.stream.comments():
 		if keyphrase in comment.body:
+				''' Check to see if there is already a playlist 
+				for this thred, create one if necessary, then go into 
+				adding the songs.
+				Need to see how to differentiate between the parent ID being a 
+				submittion_id or a comment'''
 				try:
 					#Now begin to check parent for song and look it up
 					txt = comment.parent()
