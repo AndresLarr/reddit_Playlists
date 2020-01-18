@@ -43,7 +43,7 @@ for comment in subreddit.stream.comments():
 				#check to see if E PL for this thread
 				if comment.parent() is Submission: #Checks to see if we are at a top level comment
  					results = spotify.search(q = comment.parent().title, type = "playlist")
-
+ 					
 					try:
 						#Now begin to check parent for song and look it up
 						txt = comment.parent()
