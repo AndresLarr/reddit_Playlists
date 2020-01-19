@@ -43,19 +43,24 @@ for comment in subreddit.stream.comments():
 				#check to see if E PL for this thread
 				if comment.parent() is Submission: #Checks to see if we are at a top level comment
  					results = spotify.search(q = comment.parent().title, type = "playlist")
- 					
-					try:
-						#Now begin to check parent for song and look it up
-						txt = comment.parent()
-						#from the parent comment check to see if its a song
-						'''
-						process the text to see if it can be a song. 
-						Problems:
-						- If the comment contains more than just the song and artist
-						I will need to try and find the song.
-						-What if the song I add isn't correct
-						(will need to add a second command and edit the playlist)
-						-if there are multiple songs that are similar titles/remakes
-						how can i differentiate'''
-					except:
-						reddit.comment("Sorry, your song was not found on spotify")
+ 					for playlist in results['playlists']['items']:
+ 						if playlist['owner']['id'] == 1223527784:
+ 							'''This should now have checked the playlsits on Spotify 
+ 							with names matching the reddit thread, and then check if the
+ 							author to any of the play lists is me'''			
+							try:
+								#Now begin to check parent for song and look it up
+								txt = comment.parent()
+																
+								#from the parent comment check to see if its a song
+								'''
+								process the text to see if it can be a song. 
+								Problems:
+								- If the comment contains more than just the song and artist
+								I will need to try and find the song.
+								-What if the song I add isn't correct
+								(will need to add a second command and edit the playlist)
+								-if there are multiple songs that are similar titles/remakes
+								how can i differentiate'''
+							except:
+								reddit.comment("Sorry, your song was not found on spotify")
